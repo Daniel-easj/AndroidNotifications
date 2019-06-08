@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void insistentNotification(View view) {
 
-        Notification notification = new NotificationCompat.Builder(this, "TestID")
+        Notification notification = new NotificationCompat.Builder(this, "AlarmChannel")
                 .setContentTitle("Alarm App")
                 .setContentText("Alarm is active")
                 .setSmallIcon(R.drawable.ic_alarm_black_24dp)
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
             CharSequence name = "Alerts";
             String description = "Notifications with alarms";
             int importance = NotificationManager.IMPORTANCE_HIGH;
-            NotificationChannel channelAlarm = new NotificationChannel("TestID", name, importance);
+            NotificationChannel channelAlarm = new NotificationChannel("AlarmChannel", name, importance);
             channelAlarm.setDescription(description);
             channelAlarm.setGroup("AlarmGroup");
 
